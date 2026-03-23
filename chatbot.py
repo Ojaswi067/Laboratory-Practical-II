@@ -7,27 +7,27 @@ pairs=[
     ["Hello I'm KukkadNukkad Chatbot here to serve you!"]
   ],
   [
-    r" (.*) contact (.*)",
+    r"(.*)contact(.*)",
     ["Contact - Customer care: 180000001"]
   ],
   [
-    r" (.*) menu (.*) ",
+    r"(.*)menu(.*) ",
     ["Menu includes 100% Non-veg food. From various types of chicken to diffrent kinds of oysters. We serve it all here"]
   ],
   [
-    r" (.*) loaction (.*) ",
+    r"(.*)location(.*) ",
     [" We are located at MG Road, Pune"]
   ],
   [
-    r" (.*) timing|hours (.*) ",
+    r"(.*)timing|hours(.*) ",
     [" Open from 9 am to 11 pm"]
   ],
   [
-    r" (.*) home delivery (.*) ",
+    r"(.*)home delivery(.*) ",
     ["Sorry we don't provide any delivery service."]
   ],
   [
-    r" (.*) ",
+    r"(.*)",
     [" Sorry ! Didnt get that."]
   ]
 ]
@@ -37,5 +37,5 @@ def chat():
   chat=Chat(pairs,reflections)
   chat.converse()
 
-if "__name__" = "__main__":
+if __name__ == "__main__":
   chat()
